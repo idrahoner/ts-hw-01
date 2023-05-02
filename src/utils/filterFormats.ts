@@ -1,4 +1,4 @@
-import { IData } from "components/Statistics/Statistics";
+import { IData } from "components/Statistics";
 
 export function filterFormats(array: IData[]) {
   return array.reduce((accum: IData[], element) => {

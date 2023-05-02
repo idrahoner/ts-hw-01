@@ -1,0 +1,11 @@
+td {
+  padding: var(--inner-padding);
+}
+
+.bodyRow:nth-child(2n) {
+  background-color: var(--table-bg-color);
+}
+
+.type {
+  text-transform: capitalize;
+}

@@ -1,0 +1,47 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  width: 350px;
+
+  padding: var(--inner-padding);
+
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.activeStatus {
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  margin-right: var(--friends-inner-margin);
+
+  border-radius: 50%;
+}
+
+.offline {
+  background-color: red;
+}
+
+.online {
+  background-color: green;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+
+  margin-right: var(--friends-inner-margin);
+
+  border-radius: var(--border-radius);
+}
+
+.name {
+  font-size: var(--lg-font-size);
+}

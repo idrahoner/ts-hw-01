@@ -3,15 +3,12 @@ import user from "data/user.json";
 
 import Statistics from "components/Statistics";
 import data from "data/data.json";
-// import { filterFormats } from "utils";
 
-// import FriendList from "components/FriendList";
-// import friends from "data/friends.json";
+import FriendsList from "components/FriendsList";
+import friends from "data/friends.json";
 
-// import TransactionsList from "./components/TransactionsList";
-// import transactions from "data/transactions.json";
-
-// const filteredData = filterFormats(data);
+import TransactionsList from "components/TransactionsList";
+import transactions from "data/transactions.json";
 
 const App: React.FC = () => {
   return (
@@ -33,8 +30,8 @@ const App: React.FC = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" schedule={data} />
-      {/* <FriendList list={friends} />
-      <TransactionsList list={transactions} /> */}
+      <FriendsList list={friends} />
+      <TransactionsList list={transactions} />
     </div>
   );
 };
