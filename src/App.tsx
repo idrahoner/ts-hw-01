@@ -1,8 +1,8 @@
 import Profile from "components/Profile";
 import user from "data/user.json";
 
-// import Statistics from "components/Statistics";
-// import data from "data/data.json";
+import Statistics from "components/Statistics";
+import data from "data/data.json";
 // import { filterFormats } from "utils";
 
 // import FriendList from "components/FriendList";
@@ -32,8 +32,8 @@ const App: React.FC = () => {
         location={user.location}
         stats={user.stats}
       />
-      {/* <Statistics title="Upload stats" schedule={filteredData} />
-      <FriendList list={friends} />
+      <Statistics title="Upload stats" schedule={data} />
+      {/* <FriendList list={friends} />
       <TransactionsList list={transactions} /> */}
     </div>
   );
